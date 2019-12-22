@@ -1,6 +1,6 @@
 const API_BASE_URL = process.env.NODE_ENV === 'development'
     ? 'http://localhost:9000'
-    : 'https://find-here-pois-api.herokuapp.com/';
+    : 'https://find-here-pois-api.herokuapp.com';
 
 export default class Api {
 
