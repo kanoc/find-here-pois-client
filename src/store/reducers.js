@@ -1,7 +1,7 @@
 import { BBOX_CHANGED, DATA_LOADED, ITEM_SELECTED } from './action-types';
 
 const initialState = {
-    bbox: [11.509724, 48.106973, 11.629028, 48.170093], // Munich center
+    bbox: [],
     selectedId: '',
     hotels: [],
 };

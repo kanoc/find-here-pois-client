@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import PigeonMap from 'pigeon-maps'
 import PigeonMarker from 'pigeon-marker'
+
 import { changeBbox, selectItem } from '../store/actions'
 
 const mapDispatchToProps = dispatch => ({

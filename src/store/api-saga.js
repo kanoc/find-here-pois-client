@@ -1,4 +1,5 @@
 import { takeLatest, call, put } from 'redux-saga/effects';
+
 import { BBOX_CHANGED, DATA_LOADED, API_ERRORED } from './action-types';
 import Api from "./Api"
 
