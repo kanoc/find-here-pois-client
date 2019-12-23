@@ -12,12 +12,15 @@ const ListContainer = styled.div`
     width: 408px;
     box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.5);
     z-index: 5;
-    overflow-y: auto;
 `;
 
 const ListHeader = styled.span`
     font-weight: bold;
     padding: 10px 18px 20px 24px;
+`;
+
+const ListContent = styled.div`
+    overflow-y: auto;
 `;
 
 const Divider = styled.hr`
@@ -52,12 +55,14 @@ const ConnectedList = ({ hotels, selectedId, selectHotel }) => {
     return (
         <ListContainer>
             <ListHeader>{headerText}</ListHeader>
-            {hotels.map(item => (
-                <React.Fragment key={item.id}>
-                    <Divider/>
-                    <ListItem key={item.id} item={item} isSelected={item.id === selectedId} onItemClick={onItemClick}/>
-                </React.Fragment>
-            ))}
+            <ListContent>
+                {hotels.map(item => (
+                    <React.Fragment key={item.id}>
+                        <Divider/>
+                        <ListItem item={item} isSelected={item.id === selectedId} onItemClick={onItemClick}/>
+                    </React.Fragment>
+                ))}
+            </ListContent>
         </ListContainer>
     );
 };
