@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConnectedList component renders correctly 1`] = `
+<div
+  className="sc-bwzfXH eTBoOe"
+>
+  <span
+    className="sc-htpNat gJDJnL"
+  >
+    An exquisite selection of wonderful hotels in the area:
+  </span>
+  <hr
+    className="sc-bxivhb liDJGs"
+  />
+  <div
+    className="sc-bdVaJa hpfjMZ"
+    onClick={[Function]}
+  >
+    <div>
+      Foo1
+    </div>
+    <div>
+      <i>
+        Rating: 
+        1
+      </i>
+    </div>
+  </div>
+  <hr
+    className="sc-bxivhb liDJGs"
+  />
+  <div
+    className="sc-bdVaJa hpfjMZ"
+    onClick={[Function]}
+  >
+    <div>
+      Foo2
+    </div>
+    <div>
+      <i>
+        Rating: 
+        2
+      </i>
+    </div>
+  </div>
+</div>
+`;
