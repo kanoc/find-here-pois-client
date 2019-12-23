@@ -9,57 +9,10 @@ const HorizontalContainer = styled.div`
     flex-direction: row;
 `;
 
-const data = [
-  {
-    id: 'a',
-    title: 'Robin',
-  },
-  {
-    id: 'b',
-    title: 'Dave',
-  },
-  {
-    id: 'c',
-    title: 'Dave',
-  },
-  {
-    id: 'd',
-    title: 'Dave',
-  },
-  {
-    id: 'e',
-    title: 'Dave',
-  },
-  {
-    id: 'f',
-    title: 'Dave',
-  },
-  {
-    id: 'g',
-    title: 'Dave',
-  },
-  {
-    id: 'h',
-    title: 'Dave',
-  },
-  {
-    id: 'i',
-    title: 'Dave',
-  },
-  {
-    id: 'j',
-    title: 'Dave',
-  },
-  {
-    id: 'k',
-    title: 'Dave',
-  },
-];
-
 export default function App() {
     return (
         <HorizontalContainer>
-            <List list={data}/>
+            <List/>
             <Map/>
         </HorizontalContainer>
     );
